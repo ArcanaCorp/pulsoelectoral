@@ -1,0 +1,184 @@
+/* ==========================================================
+   BACKGROUNDS
+========================================================== */
+
+.bg-primary {
+    background: var(--primary);
+    color: var(--on-primary);
+}
+
+.bg-secondary {
+    background: var(--secondary);
+    color: var(--on-secondary);
+}
+
+.bg-surface {
+    background: var(--surface);
+}
+
+.bg-surface-low {
+    background: var(--surface-container-low);
+}
+
+.bg-surface-container {
+    background: var(--surface-container);
+}
+
+.bg-success {
+    background: var(--success);
+    color: var(--on-success);
+}
+
+.bg-success-soft {
+    background: var(--success-bg-soft);
+}
+
+.bg-warning {
+    background: var(--warning);
+    color: var(--on-warning);
+}
+
+.bg-warning-soft {
+    background: var(--warning-bg-soft);
+}
+
+.bg-danger {
+    background: var(--danger);
+    color: var(--on-danger);
+}
+
+.bg-danger-soft {
+    background: var(--danger-bg-soft);
+}
+
+.bg-error {
+    background: var(--error);
+    color: var(--on-error);
+}
+
+.bg-error-soft {
+    background: var(--error-bg-soft);
+}
+
+.bg-info {
+    background: var(--info);
+    color: var(--on-info);
+}
+
+.bg-info-soft {
+    background: var(--info-bg-soft);
+}
+
+/* ==========================================================
+   TEXT COLORS
+========================================================== */
+
+.text-primary {
+    color: var(--primary);
+}
+
+.text-secondary {
+    color: var(--secondary);
+}
+
+.text-surface {
+    color: var(--on-surface);
+}
+
+.text-muted {
+    color: var(--on-surface-variant);
+}
+
+.text-success {
+    color: var(--success);
+}
+
+.text-warning {
+    color: var(--warning);
+}
+
+.text-danger {
+    color: var(--danger);
+}
+
+.text-error {
+    color: var(--error);
+}
+
+.text-info {
+    color: var(--info);
+}
+
+.text-white {
+    color: #ffffff;
+}
+
+/* ==========================================================
+   BORDERS
+========================================================== */
+
+.border {
+    border: 1px solid var(--outline-variant);
+}
+
+.border-primary {
+    border: 1px solid var(--primary);
+}
+
+.border-secondary {
+    border: 1px solid var(--secondary);
+}
+
+.border-success {
+    border: 1px solid var(--success-border);
+}
+
+.border-warning {
+    border: 1px solid var(--warning-border);
+}
+
+.border-danger {
+    border: 1px solid var(--danger-border);
+}
+
+.border-error {
+    border: 1px solid var(--error-border);
+}
+
+.border-info {
+    border: 1px solid var(--info-border);
+}
+
+/* ==========================================================
+   BADGES / ALERTS
+========================================================== */
+
+.status-success {
+    background: var(--success-bg-soft);
+    color: var(--success);
+    border: 1px solid var(--success-border);
+}
+
+.status-warning {
+    background: var(--warning-bg-soft);
+    color: var(--warning);
+    border: 1px solid var(--warning-border);
+}
+
+.status-danger {
+    background: var(--danger-bg-soft);
+    color: var(--danger);
+    border: 1px solid var(--danger-border);
+}
+
+.status-error {
+    background: var(--error-bg-soft);
+    color: var(--error);
+    border: 1px solid var(--error-border);
+}
+
+.status-info {
+    background: var(--info-bg-soft);
+    color: var(--info);
+    border: 1px solid var(--info-border);
+}

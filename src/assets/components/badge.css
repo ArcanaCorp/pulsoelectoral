@@ -1,0 +1,132 @@
+/* ==========================
+   BASE
+========================== */
+
+.badge {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    gap: 6px;
+    white-space: nowrap;
+    font-size: 12px;
+    font-weight: 500;
+    line-height: 1;
+    border-radius: var(--radius-full);
+    transition:
+        background-color var(--transition-fast),
+        color var(--transition-fast),
+        border-color var(--transition-fast);
+}
+
+/* ==========================
+   SIZES
+========================== */
+
+.badge-sm {
+    height: 22px;
+    padding-inline: 8px;
+}
+
+.badge-md {
+    height: 28px;
+    padding-inline: 12px;
+}
+
+.badge-lg {
+    height: 34px;
+    padding-inline: 16px;
+}
+
+.badge {
+    height: 28px;
+    padding-inline: 12px;
+}
+
+/* ==========================
+   VARIANTS
+========================== */
+
+.badge-primary {
+    background: var(--chip-blue-bg);
+    color: var(--chip-blue-text);
+}
+
+.badge-success {
+    background: var(--chip-green-bg);
+    color: var(--chip-green-text);
+}
+
+.badge-warning {
+    background: var(--chip-yellow-bg);
+    color: var(--chip-yellow-text);
+}
+
+.badge-danger {
+    background: var(--chip-red-bg);
+    color: var(--chip-red-text);
+}
+
+.badge-secondary {
+    background: var(--surface-container-low);
+    color: var(--on-surface);
+}
+
+/* ==========================
+   OUTLINE
+========================== */
+
+.badge-outline {
+    background: transparent;
+    border: 1px solid var(--border-color);
+    color: var(--on-surface);
+}
+
+.badge-outline-primary {
+    border: 1px solid var(--primary);
+    background: transparent;
+    color: var(--primary);
+}
+
+/* ==========================
+   STATES
+========================== */
+
+.badge-hover:hover { filter: brightness(.98); }
+.badge-clickable { cursor: pointer; }
+.badge-clickable:active { transform: scale(.98); }
+
+/* ==========================
+   DOT
+========================== */
+
+.badge-dot::before {
+    content: "";
+    width: 8px;
+    height: 8px;
+    border-radius: 999px;
+    background: currentColor;
+}
+
+/* ==========================
+   SOFT COLORS
+========================== */
+
+.badge-blue-soft {
+    background: #eff6ff;
+    color: #2563eb;
+}
+
+.badge-green-soft {
+    background: #ecfdf5;
+    color: #16a34a;
+}
+
+.badge-yellow-soft {
+    background: #fffbeb;
+    color: #ca8a04;
+}
+
+.badge-red-soft {
+    background: #fef2f2;
+    color: #dc2626;
+}

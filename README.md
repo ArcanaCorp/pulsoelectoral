@@ -1,36 +1,58 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# Pulso Electoral
 
-## Getting Started
+## Plataforma de Inteligencia Electoral
 
-First, run the development server:
+Pulso Electoral es una plataforma propietaria de inteligencia electoral desarrollada para la planificación, análisis y toma de decisiones estratégicas en campañas políticas municipales y provinciales.
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
-```
+La plataforma integra análisis demográfico, segmentación electoral, simulación de escenarios, inteligencia territorial y recomendaciones estratégicas basadas en datos.
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+---
 
-You can start editing the page by modifying `app/page.js`. The page auto-updates as you edit the file.
+## Estado del Proyecto
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+**Desarrollo privado y confidencial.**
 
-## Learn More
+Este repositorio contiene información, algoritmos, metodologías, diseños, análisis y componentes de software de carácter estrictamente reservado.
 
-To learn more about Next.js, take a look at the following resources:
+---
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+## Propiedad Intelectual
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+© Pulso Electoral. Todos los derechos reservados.
 
-## Deploy on Vercel
+Todo el código fuente, documentación, modelos analíticos, diseños, metodologías, estructuras de datos, procesos y activos digitales contenidos en este proyecto son propiedad exclusiva de Pulso Electoral.
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+Queda expresamente prohibido:
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+* Copiar total o parcialmente el código fuente.
+* Distribuir, sublicenciar o comercializar cualquier componente sin autorización expresa y por escrito.
+* Reproducir algoritmos, modelos matemáticos o metodologías implementadas.
+* Compartir credenciales, datos o documentación asociada al proyecto.
+* Publicar este repositorio en servicios públicos o privados sin autorización.
+
+---
+
+## Confidencialidad
+
+Este software contiene información estratégica y sensible relacionada con procesos electorales, análisis estadístico y metodologías propietarias.
+
+El acceso está restringido únicamente a personal autorizado por Pulso Electoral.
+
+Cualquier acceso, uso, reproducción o divulgación no autorizada podrá dar lugar a responsabilidades civiles, administrativas y/o penales conforme a la legislación aplicable.
+
+---
+
+## Licencia
+
+Este proyecto **NO** se distribuye bajo ninguna licencia de software libre u open source.
+
+Su uso está limitado exclusivamente a Pulso Electoral y a las personas o entidades expresamente autorizadas.
+
+**Reservado. Uso interno únicamente.**
+
+---
+
+## Contacto
+
+**Pulso Electoral**
+Inteligencia para la toma de decisiones.

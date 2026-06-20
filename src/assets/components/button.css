@@ -1,0 +1,187 @@
+/* ==========================
+   BASE
+========================== */
+
+.btn {
+    appearance: none;
+    border: 1px solid transparent;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    gap: var(--space-sm);
+    font-family: var(--font-sans);
+    font-weight: 500;
+    cursor: pointer;
+    user-select: none;
+    transition:
+        background-color var(--transition-fast),
+        border-color var(--transition-fast),
+        color var(--transition-fast),
+        transform var(--transition-fast);
+    white-space: nowrap;
+}
+
+.btn:focus-visible {
+    outline: var(--focus-ring-width) solid var(--focus-ring-color);
+    outline-offset: var(--focus-ring-offset);
+}
+
+/* ==========================
+   SIZES
+========================== */
+
+.btn-sm {
+    height: 36px;
+    padding-inline: 12px;
+    border-radius: var(--radius);
+    font-size: 13px;
+}
+
+.btn-md {
+    height: 40px;
+    padding-inline: 16px;
+    border-radius: var(--radius);
+    font-size: 14px;
+}
+
+.btn-lg {
+    height: 48px;
+    padding-inline: 20px;
+    border-radius: var(--radius-md);
+    font-size: 15px;
+}
+
+/* ==========================
+   PRIMARY
+========================== */
+
+.btn-primary {
+    background: var(--primary);
+    color: var(--on-primary);
+}
+
+.btn-primary:hover {
+    background: var(--surface-tint);
+}
+
+.btn-primary:active {
+    transform: scale(.98);
+}
+
+.btn-primary:disabled {
+    opacity: .5;
+    cursor: not-allowed;
+}
+
+/* ==========================
+   SECONDARY
+========================== */
+
+.btn-secondary {
+    background: white;
+    color: var(--on-surface);
+    border-color: var(--border-color);
+}
+
+.btn-secondary:hover {
+    background: var(--surface-container-low);
+}
+
+.btn-secondary:active {
+    transform: scale(.98);
+}
+
+/* ==========================
+   GHOST
+========================== */
+
+.btn-ghost {
+    background: transparent;
+    color: var(--on-surface);
+}
+
+.btn-ghost:hover {
+    background: var(--surface-container-low);
+}
+
+.btn-ghost:active {
+    transform: scale(.98);
+}
+
+/* ==========================
+   OUTLINE
+========================== */
+
+.btn-outline {
+    background: transparent;
+    color: var(--primary);
+    border-color: var(--primary);
+}
+
+.btn-outline:hover {
+    background: var(--primary-fixed);
+}
+
+/* ==========================
+   DESTRUCTIVE
+========================== */
+
+.btn-destructive {
+    background: var(--error);
+    color: white;
+}
+
+.btn-destructive:hover {
+    filter: brightness(.95);
+}
+
+/* ==========================
+   SUCCESS
+========================== */
+
+.btn-success {
+    background: var(--success);
+    color: white;
+}
+
+.btn-success:hover {
+    filter: brightness(.95);
+}
+
+/* ==========================
+   FULL WIDTH
+========================== */
+
+.btn-block {
+    width: 100%;
+}
+
+/* ==========================
+   ICON BUTTON
+========================== */
+
+.btn-icon {
+    width: 40px;
+    height: 40px;
+    padding: 0;
+    border-radius: var(--radius);
+    background: transparent;
+}
+
+.btn-icon:hover { background: var(--surface-container-low); }
+.btn-icon.btn-sm { width: 32px; height: 32px; }
+.btn-icon.btn-lg { width: 48px; height: 48px; }
+
+/* ==========================
+   LOADING
+========================== */
+
+.btn-loading { pointer-events: none; opacity: .7; }
+
+/* ==========================
+   STATES
+========================== */
+
+.btn[disabled] { opacity: .5; cursor: not-allowed; }
+.btn:hover:not(:disabled) { transition: all var(--transition-fast); }
+.btn:active:not(:disabled) { transition: all 100ms ease; }

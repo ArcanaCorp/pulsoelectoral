@@ -1,0 +1,110 @@
+/* =========================
+   AVATAR BASE
+========================= */
+
+.avatar {
+    position: relative;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;
+    border-radius: var(--radius-full);
+    background: var(--surface-container);
+    color: var(--on-surface);
+    font-weight: 600;
+    user-select: none;
+    flex-shrink: 0;
+}
+
+/* =========================
+   SIZES
+========================= */
+
+.avatar-xs {
+    width: 24px;
+    height: 24px;
+    font-size: 10px;
+}
+
+.avatar-sm {
+    width: 32px;
+    height: 32px;
+    font-size: 12px;
+}
+
+.avatar-md {
+    width: 40px;
+    height: 40px;
+    font-size: 14px;
+}
+
+.avatar-lg {
+    width: 56px;
+    height: 56px;
+    font-size: 18px;
+}
+
+.avatar-xl {
+    width: 72px;
+    height: 72px;
+    font-size: 24px;
+}
+
+/* =========================
+   IMAGE
+========================= */
+
+.avatar img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+/* =========================
+   BORDER
+========================= */
+
+.avatar-bordered { border: 2px solid white; }
+
+/* =========================
+   STATUS
+========================= */
+
+.avatar-status {
+    position: absolute;
+    right: 2px;
+    bottom: 2px;
+    width: 10px;
+    height: 10px;
+    border-radius: 999px;
+    border: 2px solid white;
+}
+
+.avatar-status-success { background: var(--success); }
+
+.avatar-status-warning { background: var(--warning); }
+
+.avatar-status-danger { background: var(--danger); }
+
+.avatar-status-primary { background: var(--primary); }
+
+/* =========================
+   GROUP
+========================= */
+
+.avatar-group { display: flex; }
+
+.avatar-group .avatar { margin-left: -8px; }
+
+.avatar-group .avatar:first-child { margin-left: 0; }
+
+/* =========================
+   HOVER
+========================= */
+
+.avatar-hover {
+    cursor: pointer;
+    transition: transform var(--transition-fast);
+}
+
+.avatar-hover:hover { transform: scale(1.05); }

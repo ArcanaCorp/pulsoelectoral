@@ -1,0 +1,136 @@
+/* =========================
+   OVERLAY
+========================= */
+
+.modal-overlay {
+    position: fixed;
+    inset: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 24px;
+    background: rgba(15, 23, 42, .4);
+    z-index: 1000;
+    animation: modal-fade .15s ease;
+}
+
+/* =========================
+   MODAL
+========================= */
+
+.modal {
+    width: 100%;
+    max-width: 560px;
+    background: white;
+    border: 1px solid var(--border-color);
+    border-radius: var(--radius-lg);
+    box-shadow: var(--shadow-dropdown);
+    overflow: hidden;
+    animation: modal-scale .15s ease;
+}
+
+.modal-sm { max-width: 400px;}
+
+.modal-md { max-width: 560px;}
+
+.modal-lg { max-width: 800px;}
+
+.modal-xl { max-width: 1100px;}
+
+/* =========================
+   HEADER
+========================= */
+
+.modal-header {
+    display: flex;
+    align-items: start;
+    justify-content: space-between;
+    gap: var(--space-md);
+    padding: var(--space-lg);
+    border-bottom: 1px solid var(--border-color-soft);
+}
+
+.modal-title {
+    color: var(--on-surface);
+    font-size: var(--text-headline-md-size);
+    font-weight: 600;
+}
+
+.modal-description {
+    margin-top: 4px;
+    color: var(--on-surface-variant);
+    font-size: 14px;
+}
+
+/* =========================
+   BODY
+========================= */
+
+.modal-body {
+    padding: var(--space-lg);
+    display: flex;
+    flex-direction: column;
+    gap: var(--space-lg);
+    max-height: 75vh;
+    overflow-y: auto;
+}
+
+/* =========================
+   FOOTER
+========================= */
+
+.modal-footer {
+    display: flex;
+    justify-content: flex-end;
+    gap: var(--space-sm);
+    padding: var(--space-lg);
+    border-top: 1px solid var(--border-color-soft);
+}
+
+/* =========================
+   CLOSE
+========================= */
+
+.modal-close {
+    width: 36px;
+    height: 36px;
+    border-radius: var(--radius);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    transition: background .15s;
+}
+
+.modal-close:hover { background: var(--surface-container-low); }
+
+/* =========================
+   STATES
+========================= */
+
+.modal-scroll { overflow-y: auto; }
+.modal-center { text-align: center; }
+
+/* =========================
+   ANIMATION
+========================= */
+
+@keyframes modal-fade {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+
+@keyframes modal-scale {
+    from {
+        opacity: .5;
+        transform: scale(.96);
+    }
+    to {
+        opacity: 1;
+        transform: scale(1);
+    }
+}

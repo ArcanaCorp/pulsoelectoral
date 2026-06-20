@@ -1,0 +1,172 @@
+/* ==========================
+   WRAPPER
+========================== */
+
+.table-wrapper {
+    overflow-x: auto;
+    border: 1px solid var(--border-color);
+    border-radius: var(--radius-lg);
+    background: white;
+}
+
+/* ==========================
+   TABLE
+========================== */
+
+.table {
+    width: 100%;
+    border-collapse: collapse;
+    background: white;
+}
+
+/* ==========================
+   HEAD
+========================== */
+
+.table thead { background: var(--table-header-bg); }
+
+.table th {
+    padding: 14px 16px;
+    color: var(--on-surface-variant);
+    font-size: var(--text-label-sm-size);
+    font-weight: var(--text-label-sm-weight);
+    letter-spacing: var(--text-label-sm-letter-spacing);
+    text-transform: uppercase;
+    text-align: left;
+    white-space: nowrap;
+}
+
+/* ==========================
+   BODY
+========================== */
+
+.table td {
+    padding: 16px;
+    color: var(--on-surface);
+    font-size: var(--text-body-md-size);
+    border-bottom: 1px solid var(--table-row-border);
+}
+
+.table tbody tr:last-child td { border-bottom: none; }
+
+/* ==========================
+   ROW STATES
+========================== */
+
+.table tbody tr { transition: background-color var(--transition-fast); }
+.table tbody tr:hover { background: var(--surface-container-low); }
+.table-row-selected { background: var(--primary-fixed); }
+.table-row-active { background: var(--surface-container); }
+
+/* ==========================
+   ALIGNMENTS
+========================== */
+
+.table-center {
+    text-align: center;
+}
+
+.table-right {
+    text-align: right;
+}
+
+/* ==========================
+   COMPACT
+========================== */
+
+.table-sm th,
+.table-sm td {
+    padding: 10px 14px;
+}
+
+.table-lg th,
+.table-lg td {
+    padding: 20px;
+}
+
+/* ==========================
+   STRIPED
+========================== */
+
+.table-striped tbody tr:nth-child(even) { background: var(--surface-container-low); }
+
+/* ==========================
+   BORDERLESS
+========================== */
+
+.table-borderless td { border-bottom: none; }
+
+/* ==========================
+   DENSITY
+========================== */
+
+.table-compact td { padding-block: 10px; }
+.table-relaxed td { padding-block: 22px; }
+
+/* ==========================
+   ACTION COLUMN
+========================== */
+
+.table-actions {
+    display: flex;
+    align-items: center;
+    gap: var(--space-sm);
+}
+
+/* ==========================
+   STATUS CELL
+========================== */
+
+.table-status {
+    display: inline-flex;
+    align-items: center;
+    gap: 8px;
+}
+
+/* ==========================
+   EMPTY STATE
+========================== */
+
+.table-empty {
+    padding: 48px 24px;
+    text-align: center;
+    color: var(--on-surface-variant);
+}
+
+/* ==========================
+   LOADING
+========================== */
+
+.table-loading td {
+    position: relative;
+    overflow: hidden;
+}
+
+.table-loading td::after {
+    content: "";
+    position: absolute;
+    inset: 0;
+    background: linear-gradient(90deg, transparent, rgba(255,255,255,.5), transparent);
+    animation: table-loading 1.2s infinite;
+}
+
+@keyframes table-loading {
+    from {
+        transform: translateX(-100%);
+    }
+    to {
+        transform: translateX(100%);
+    }
+}
+
+/* ==========================
+   RESPONSIVE
+========================== */
+
+@media (max-width: 768px) {
+    .table-wrapper { border-radius: var(--radius-md); }
+    .table th,
+    .table td {
+        padding: 12px;
+    }
+}

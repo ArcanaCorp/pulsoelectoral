@@ -1,0 +1,243 @@
+:root {
+    /* ==========================
+        COLORS
+    ========================== */
+
+    /* Background & Surface */
+    --background: #f7f9fb;
+    --on-background: #191c1e;
+
+    --surface: #f7f9fb;
+    --surface-dim: #d8dadc;
+    --surface-bright: #f7f9fb;
+
+    --surface-container-lowest: #ffffff;
+    --surface-container-low: #f2f4f6;
+    --surface-container: #eceef0;
+    --surface-container-high: #e6e8ea;
+    --surface-container-highest: #e0e3e5;
+
+    --surface-variant: #e0e3e5;
+
+    --on-surface: #191c1e;
+    --on-surface-variant: #434655;
+
+    --inverse-surface: #2d3133;
+    --inverse-on-surface: #eff1f3;
+
+    /* Border */
+    --outline: #737686;
+    --outline-variant: #c3c6d7;
+
+    /* Primary */
+    --primary: #004ac6;
+    --on-primary: #ffffff;
+
+    --primary-container: #2563eb;
+    --on-primary-container: #eeefff;
+
+    --primary-fixed: #dbe1ff;
+    --primary-fixed-dim: #b4c5ff;
+
+    --on-primary-fixed: #00174b;
+    --on-primary-fixed-variant: #003ea8;
+
+    --inverse-primary: #b4c5ff;
+
+    --surface-tint: #0053db;
+
+    /* Secondary */
+    --secondary: #565e74;
+    --on-secondary: #ffffff;
+
+    --secondary-container: #dae2fd;
+    --on-secondary-container: #5c647a;
+
+    --secondary-fixed: #dae2fd;
+    --secondary-fixed-dim: #bec6e0;
+
+    --on-secondary-fixed: #131b2e;
+    --on-secondary-fixed-variant: #3f465c;
+
+    /* Tertiary */
+    --tertiary: #943700;
+    --on-tertiary: #ffffff;
+
+    --tertiary-container: #bc4800;
+    --on-tertiary-container: #ffede6;
+
+    --tertiary-fixed: #ffdbcd;
+    --tertiary-fixed-dim: #ffb596;
+
+    --on-tertiary-fixed: #360f00;
+    --on-tertiary-fixed-variant: #7d2d00;
+
+    /* Error */
+    --error: #ba1a1a;
+    --on-error: #ffffff;
+
+    --error-container: #ffdad6;
+    --on-error-container: #93000a;
+
+    /* Semantic Colors */
+    --success: #16a34a;
+    --success-bg: #dcfce7;
+
+    --warning: #ca8a04;
+    --warning-bg: #fef9c3;
+
+    --danger: #dc2626;
+    --danger-bg: #fee2e2;
+
+    --info: var(--primary);
+    --info-bg: #dbeafe;
+
+    /* ==========================
+        TYPOGRAPHY
+    ========================== */
+
+    --font-sans: var(--font-raleway);
+
+    /* Headline LG */
+    --text-headline-lg-size: 32px;
+    --text-headline-lg-weight: 600;
+    --text-headline-lg-line-height: 40px;
+    --text-headline-lg-letter-spacing: -0.02em;
+
+    /* Headline LG Mobile */
+    --text-headline-lg-mobile-size: 24px;
+    --text-headline-lg-mobile-weight: 600;
+    --text-headline-lg-mobile-line-height: 32px;
+    --text-headline-lg-mobile-letter-spacing: -0.01em;
+
+    /* Headline MD */
+    --text-headline-md-size: 20px;
+    --text-headline-md-weight: 600;
+    --text-headline-md-line-height: 28px;
+    --text-headline-md-letter-spacing: -0.01em;
+
+    /* Body LG */
+    --text-body-lg-size: 16px;
+    --text-body-lg-weight: 400;
+    --text-body-lg-line-height: 24px;
+
+    /* Body MD */
+    --text-body-md-size: 14px;
+    --text-body-md-weight: 400;
+    --text-body-md-line-height: 20px;
+
+    /* Label SM */
+    --text-label-sm-size: 12px;
+    --text-label-sm-weight: 500;
+    --text-label-sm-line-height: 16px;
+    --text-label-sm-letter-spacing: 0.05em;
+
+    /* ==========================
+        RADIUS
+    ========================== */
+
+    --radius-sm: 4px;
+    --radius: 8px;
+    --radius-md: 12px;
+    --radius-lg: 16px;
+    --radius-xl: 24px;
+    --radius-full: 9999px;
+
+    /* ==========================
+        SPACING
+    ========================== */
+
+    --container-max-width: 1280px;
+
+    --gutter: 24px;
+    --margin-mobile: 16px;
+
+    --space-xs: 4px;
+    --space-sm: 8px;
+    --space-md: 16px;
+    --space-lg: 24px;
+    --space-xl: 48px;
+
+    /* ==========================
+        BORDERS
+    ========================== */
+
+    --border-color: #e2e8f0;
+    --border-color-soft: #f1f5f9;
+
+    --border-width: 1px;
+
+    /* ==========================
+        ELEVATION
+    ========================== */
+
+    --shadow-none: none;
+
+    --shadow-dropdown:
+        0px 4px 12px rgba(15, 23, 42, 0.08);
+
+    /* ==========================
+        FOCUS
+    ========================== */
+
+    --focus-ring-color: var(--primary);
+    --focus-ring-width: 2px;
+    --focus-ring-offset: 2px;
+
+    /* ==========================
+        COMPONENT COLORS
+    ========================== */
+
+    /* Cards */
+    --card-bg: #ffffff;
+    --card-bg-subtle: #f8fafc;
+    --card-border: #e2e8f0;
+
+    /* Inputs */
+    --input-bg: #f8fafc;
+    --input-border: #e2e8f0;
+    --input-border-focus: var(--primary);
+
+    /* Tables */
+    --table-header-bg: #f8fafc;
+    --table-row-border: #e2e8f0;
+
+    /* Sidebar */
+    --sidebar-bg: #ffffff;
+    --sidebar-border: #e2e8f0;
+
+    /* Navbar */
+    --navbar-bg: rgba(255,255,255,.85);
+    --navbar-border: #e2e8f0;
+
+    /* Buttons */
+    --button-primary-bg: var(--primary);
+    --button-primary-text: var(--on-primary);
+
+    --button-secondary-bg: #ffffff;
+    --button-secondary-text: var(--on-surface);
+    --button-secondary-border: #e2e8f0;
+
+    /* Chips */
+    --chip-radius: 9999px;
+
+    --chip-blue-bg: #dbeafe;
+    --chip-blue-text: #1d4ed8;
+
+    --chip-green-bg: #dcfce7;
+    --chip-green-text: #15803d;
+
+    --chip-yellow-bg: #fef9c3;
+    --chip-yellow-text: #a16207;
+
+    --chip-red-bg: #fee2e2;
+    --chip-red-text: #b91c1c;
+
+    /* ==========================
+        TRANSITIONS
+    ========================== */
+
+    --transition-fast: 150ms ease;
+    --transition-normal: 250ms ease;
+    --transition-slow: 350ms ease;
+}

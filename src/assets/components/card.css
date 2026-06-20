@@ -1,0 +1,292 @@
+/* ==================================
+   BASE
+================================== */
+
+.card {
+    background: var(--card-bg);
+    border: 1px solid var(--card-border);
+    border-radius: var(--radius-lg);
+    overflow: hidden;
+    transition:
+        border-color var(--transition-fast),
+        background-color var(--transition-fast),
+        transform var(--transition-fast);
+}
+
+.card:hover {
+    border-color: var(--outline-variant);
+}
+
+/* ==================================
+   PADDING
+================================== */
+
+.card-sm { padding: var(--space-md); }
+
+.card-md { padding: var(--space-lg); }
+
+.card-lg { padding: var(--space-xl); }
+
+/* Default */
+
+.card { padding: var(--space-lg); }
+
+/* ==================================
+   ELEVATION
+================================== */
+
+.card-flat { box-shadow: none; }
+
+.card-elevated { box-shadow: var(--shadow-dropdown); }
+
+.card-hover:hover { transform: translateY(-2px); box-shadow: var(--shadow-dropdown); }
+
+/* ==================================  BACKGROUNDS
+================================== */
+
+.card-subtle { background: var(--card-bg-subtle); }
+
+.card-primary { background: var(--primary-fixed); }
+
+.card-success { background: var(--success-bg); }
+
+.card-warning { background: var(--warning-bg); }
+
+.card-danger { background: var(--danger-bg); }
+
+/* ==================================
+   BORDER COLORS
+================================== */
+
+.card-primary-border { border-color: var(--primary); }
+
+.card-success-border { border-color: var(--success); }
+
+.card-warning-border { border-color: var(--warning); }
+
+.card-danger-border { border-color: var(--danger); }
+
+/* ==================================
+   HEADER
+================================== */
+
+.card-header {
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-between;
+    gap: var(--space-md);
+    margin-bottom: var(--space-lg);
+}
+
+.card-header:not(:last-child) {
+    padding-bottom: var(--space-md);
+    border-bottom: 1px solid var(--border-color-soft);
+}
+
+/* ==================================
+   TITLE
+================================== */
+
+.card-title {
+    color: var(--on-surface);
+    font-size: var(--text-headline-md-size);
+    font-weight: 600;
+    line-height: var(--text-headline-md-line-height);
+}
+
+.card-description {
+    margin-top: var(--space-xs);
+    color: var(--on-surface-variant);
+    font-size: var(--text-body-md-size);
+    line-height: var(--text-body-md-line-height);
+}
+
+/* ==================================
+   CONTENT
+================================== */
+
+.card-content {
+    display: flex;
+    flex-direction: column;
+    gap: var(--space-lg);
+}
+
+/* ==================================
+   FOOTER
+================================== */
+
+.card-footer {
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    gap: var(--space-sm);
+    margin-top: var(--space-lg);
+    padding-top: var(--space-md);
+    border-top: 1px solid var(--border-color-soft);
+}
+
+/* ==================================
+   KPI CARD
+================================== */
+
+.card-kpi {
+    display: flex;
+    flex-direction: column;
+    gap: var(--space-sm);
+}
+
+.card-kpi-label {
+    color: var(--on-surface-variant);
+    font-size: var(--text-label-sm-size);
+    font-weight: var(--text-label-sm-weight);
+    letter-spacing: var(--text-label-sm-letter-spacing);
+    text-transform: uppercase;
+}
+
+.card-kpi-value {
+    color: var(--on-surface);
+    font-size: 2rem;
+    line-height: 1;
+    font-weight: 700;
+}
+
+.card-kpi-description {
+    color: var(--on-surface-variant);
+    font-size: var(--text-body-md-size);
+}
+
+/* ==================================
+   CLICKABLE CARD
+================================== */
+
+.card-clickable {
+    cursor: pointer;
+}
+
+.card-clickable:hover {
+    border-color: var(--primary);
+    transform: translateY(-2px);
+}
+
+.card-clickable:active {
+    transform: scale(.99);
+}
+
+.card-clickable:focus-visible {
+    outline: var(--focus-ring-width) solid var(--focus-ring-color);
+    outline-offset: var(--focus-ring-offset);
+}
+
+/* ==================================
+   STATUS CARDS
+================================== */
+
+.card-success {
+    background: var(--success-bg);
+    border-color: transparent;
+}
+
+.card-warning {
+    background: var(--warning-bg);
+    border-color: transparent;
+}
+
+.card-danger {
+    background: var(--danger-bg);
+    border-color: transparent;
+}
+
+.card-info {
+    background: var(--info-bg);
+    border-color: transparent;
+}
+
+/* ==================================
+   COMPACT
+================================== */
+
+.card-compact {
+    padding: var(--space-md);
+}
+
+.card-compact .card-header {
+    margin-bottom: var(--space-md);
+}
+
+/* ==================================
+   DASHBOARD CARD
+================================== */
+
+.card-dashboard { min-height: 180px; }
+
+.card-dashboard-lg { min-height: 320px; }
+
+/* ==================================
+   IMAGE CARD
+================================== */
+
+.card-image {
+    padding: 0;
+}
+
+.card-image img {
+    width: 100%;
+    object-fit: cover;
+}
+
+.card-image .card-content {
+    padding: var(--space-lg);
+}
+
+/* ==================================
+   LOADING
+================================== */
+
+.card-loading {
+    position: relative;
+    overflow: hidden;
+}
+
+.card-loading::before {
+    content: "";
+    position: absolute;
+    inset: 0;
+    background: linear-gradient( 90deg, transparent, rgba(255,255,255,.5), transparent);
+    animation: card-loading 1.2s infinite;
+}
+
+@keyframes card-loading {
+    from {
+        transform: translateX(-100%);
+    }
+    to {
+        transform: translateX(100%);
+    }
+}
+
+/* ==================================
+   DISABLED
+================================== */
+
+.card-disabled {
+    opacity: .6;
+    pointer-events: none;
+}
+
+/* ==================================
+   RESPONSIVE
+================================== */
+
+@media (max-width: 768px) {
+    .card {
+        padding: var(--space-md);
+    }
+
+    .card-lg {
+        padding: var(--space-lg);
+    }
+
+    .card-kpi-value {
+        font-size: 1.5rem;
+    }
+}
